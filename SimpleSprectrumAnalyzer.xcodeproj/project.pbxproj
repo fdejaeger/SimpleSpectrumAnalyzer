@@ -146,10 +146,10 @@
 		B63A96E914657621002D8A37 /* SimpleSpectrum_GraphView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SimpleSpectrum_GraphView.mm; sourceTree = "<group>"; };
 		B63A96F114657837002D8A37 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B63A96F914657837002D8A37 /* SpectrumCocoaView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpectrumCocoaView-Info.plist"; sourceTree = "<group>"; };
-		B63A9709146579B2002D8A37 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		B63A970A146579B2002D8A37 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
+		B63A9709146579B2002D8A37 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B63A970A146579B2002D8A37 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		B63A971514657AE9002D8A37 /* SpectrumAU-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpectrumAU-Info.plist"; sourceTree = "<group>"; };
-		B63A973F14657C83002D8A37 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		B63A973F14657C83002D8A37 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		B63A974C14658362002D8A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B63A974F14658399002D8A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B63A975114658407002D8A37 /* SpectrumAU-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpectrumAU-Prefix.pch"; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 				B63A96B41465722B002D8A37 /* AUBase */,
 			);
 			name = AUPublic;
-			path = Extras/CoreAudio/AudioUnits/AUPublic;
-			sourceTree = DEVELOPER_DIR;
+			path = /Library/Developer/CoreAudio/AudioUnits/AUPublic;
+			sourceTree = "<absolute>";
 		};
 		B63A96B41465722B002D8A37 /* AUBase */ = {
 			isa = PBXGroup;
@@ -283,8 +283,8 @@
 				B63A96C31465722B002D8A37 /* ComponentBase.h */,
 			);
 			name = AUBase;
-			path = Extras/CoreAudio/AudioUnits/AUPublic/AUBase;
-			sourceTree = DEVELOPER_DIR;
+			path = ../CoreAudio/AudioUnits/AUPublic/AUBase;
+			sourceTree = SOURCE_ROOT;
 		};
 		B63A96C6146572A2002D8A37 /* OtherBases */ = {
 			isa = PBXGroup;
@@ -292,9 +292,8 @@
 				B63A96C7146572A2002D8A37 /* AUEffectBase.cpp */,
 				B63A96C8146572A2002D8A37 /* AUEffectBase.h */,
 			);
-			name = OtherBases;
-			path = Extras/CoreAudio/AudioUnits/AUPublic/OtherBases;
-			sourceTree = DEVELOPER_DIR;
+			path = OtherBases;
+			sourceTree = "<group>";
 		};
 		B63A96D3146572AE002D8A37 /* Utility */ = {
 			isa = PBXGroup;
@@ -309,9 +308,8 @@
 				B63A96DB146572AE002D8A37 /* AUTimestampGenerator.cpp */,
 				B63A96DC146572AE002D8A37 /* AUTimestampGenerator.h */,
 			);
-			name = Utility;
-			path = Extras/CoreAudio/AudioUnits/AUPublic/Utility;
-			sourceTree = DEVELOPER_DIR;
+			path = Utility;
+			sourceTree = "<group>";
 		};
 		B63A96F714657837002D8A37 /* SpectrumCocoaView */ = {
 			isa = PBXGroup;
@@ -365,8 +363,8 @@
 				B627C73A146AE5FB00DFE624 /* CABitOperations.h */,
 			);
 			name = PublicUtility;
-			path = Extras/CoreAudio/PublicUtility;
-			sourceTree = DEVELOPER_DIR;
+			path = /Library/Developer/CoreAudio/PublicUtility;
+			sourceTree = "<absolute>";
 		};
 		B675E58F146B12CD0011284C /* Products */ = {
 			isa = PBXGroup;
