@@ -35,6 +35,7 @@ void SimpleSpectrumProcessor::Allocate(UInt32 inNumChannels,
     mRingBufferCount = (mRingBufferPosRead = ( mRingBufferPosWrite = 0));
     
     mChannels.alloc(mNumChannels);
+    mFFTSize = 0;
     for(UInt32 i = 0; i < mNumChannels; ++i)
         mChannels[i].mRingBufferData.alloc(ringBufferCapacity);
 }
